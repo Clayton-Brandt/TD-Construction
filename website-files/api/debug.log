@@ -1,0 +1,35 @@
+Array
+(
+    [action] => testMessageAPIEndpoint
+    [message] => what's up man?
+)
+Array
+(
+    [action] => testMessageAPIEndpoint
+    [message] => what's up man?
+)
+Array
+(
+    [action] => testMessageAPIEndpoint
+    [message] => hello
+)
+Array
+(
+    [action] => testMessageAPIEndpoint
+    [message] => hello bro
+)
+Array
+(
+    [action] => testMessageAPIEndpoint
+    [message] => what's up
+)
+Array
+(
+    [action] => testMessageAPIEndpoint
+    [message] => i eat cigarretes
+)
+Array
+(
+    [action] => testMessageAPIEndpoint
+    [message] => hello my dude
+)
