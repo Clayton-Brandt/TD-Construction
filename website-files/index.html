@@ -1,0 +1,78 @@
+    <!-- TD Construction Sign In Page -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TD Construction Sign In</title>
+     <link rel="icon" type="image/png" href="TDconstruction.png">
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <div class="container">
+         <h1>TD Construction Sign In</h1>
+         <!-- Removed onsubmit="return setAction()" -->
+         <form id="sign-in-form">
+             
+             <div class="input-container">
+                 <label for="username">Username:</label>
+                 <input type="text" id="username" name="username" required>
+             </div>
+ 
+             <div class="input-container">
+                 <label for="password">Password:</label>
+                 <input type="password" id="password" name="password" required>
+             </div>
+             
+             <!-- Dropdown for selecting role -->
+             <div class="input-container">
+                 <label for="role">Role:</label>
+                 <select id="role" name="role" required>
+                     <option value="" disabled selected>Select a role</option>
+                     <option value="employee">Employee</option>
+                     <option value="supervisor">Supervisor</option>
+                     <option value="administrator">Administrator</option>
+                 </select>
+             </div>
+ 
+             <button type="submit" class="sign-in-btn">Sign In</button>
+             
+             <div class="sign-up-link">
+                 <p>Join our company! <a href="signup.html">Create your account here</a></p>
+             </div>
+         </form>
+     </div>
+ 
+     <script>
+     // Handle sign-in via AJAX to api/auth.php
+     document.getElementById('sign-in-form').addEventListener('submit', async function(e) {
+         e.preventDefault();
+         const username = document.getElementById('username').value;
+         const password = document.getElementById('password').value;
+         const role     = document.getElementById('role').value;
+ 
+         try {
+             const res = await fetch('api/auth.php', {
+                 method: 'POST',
+                 headers: { 'Content-Type': 'application/json' },
+                 body: JSON.stringify({ username, password, role })
+             });
+             const json = await res.json();
+ 
+             if (json.status === 'success') {
+                 // Redirect based on role
+                 if (role === 'employee')       window.location.href = 'employee.php';
+                 else if (role === 'supervisor') window.location.href = 'supervisor.php';
+                 else if (role === 'administrator')      window.location.href = 'administrator.php';
+             } else {
+                 alert(json.message);
+             }
+         } catch (err) {
+             console.error(err);
+             alert('Error contacting server');
+         }
+     });
+     </script>
+ </body>
+ </html>
+ 

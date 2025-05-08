@@ -1,0 +1,150 @@
+/* When I scroll down it's a different shade of color. */
+
+/* Reset default browser styles for consistent appearance across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    word-wrap: break-word; /* Prevents text from being cut off */
+    overflow-wrap: break-word;
+}
+
+
+.input-container {
+    /* Gives space between input fields */
+    margin-bottom: 20px;
+}
+
+label {
+    /* Makes labels stand out with bold text */
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    /* Styles the input fields to make them user-friendly */
+    width: 100%;            /* Makes inputs take up the full width of their container */
+    padding: 10px;          /* Adds space inside the input fields */
+    border: 1px solid #ccc; /* Adds a light border */
+    border-radius: 5px;     /* Rounded corners for inputs */
+}
+
+button.sign-in-btn {
+    /* Styles the sign-in button */
+    width: 100%;            /* Makes the button take up full width */
+    padding: 10px;          /* Adds space inside the button */
+    background-color: #333; /* Dark background for the button */
+    color: white;           /* White text on the button */
+    border: none;           /* Removes default border */
+    border-radius: 5px;     /* Rounded corners */
+    font-size: 16px;        /* Font size for the button */
+    cursor: pointer;       /* Makes the cursor turn into a pointer on hover */
+}
+
+button.sign-in-btn:hover {
+    /* Darkens the button when hovered over */
+    background-color: #555;
+}
+
+.sign-up-link {
+    /* Centers the sign-up link and gives space above it */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-up-link a {
+    /* Styles the sign-up link */
+    color: #007bff;         /* Blue color for the link */
+    text-decoration: none;  /* Removes the underline */
+}
+
+.sign-up-link a:hover {
+    /* Underlines the link when hovered */
+    text-decoration: underline;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.sign-up-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.sign-up-btn:hover {
+    background-color: #0056b3;
+}
+
+.sign-in-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-in-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sign-in-link a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    background-color: #f9f9f9;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    box-shadow:0px0px10px rgba(0,0,0,0.1);
+    margin-bottom:40px;
+   }
+   
+   table {
+    border-collapse: collapse;
+    width:100%;
+   }
+   
+   th, td {
+    border:1px solid #ccc;
+    padding:10px;
+   }
+   
+   th {
+    background-color: #f0f0f0;
+   }
