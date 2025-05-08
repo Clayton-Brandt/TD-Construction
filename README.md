@@ -7,3 +7,5 @@ To insert the database go to C:\xampp\mysql\data and create the folder td_constr
 Once that's set up open XAMP and start Apache and MySQL. Press admin for Apache, then tdconstruction to view the website.
 Press admin for MySQL to view the database.
 The website should run locally and if it's set up properly on your computer it should run fine. Maybe.
+
+Also the PowerPoint is here too. Just download the entire project as a zip.
